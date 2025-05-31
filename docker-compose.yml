@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+    api:
+        build: .
+        container_name: virtual_ta_api
+        env_file: .env
+        ports:
+            - "8000:8000"
